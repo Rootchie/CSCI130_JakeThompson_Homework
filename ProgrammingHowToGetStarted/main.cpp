@@ -6,15 +6,20 @@
 using namespace std;
 int main() 
 {
-  //Initialize variables
-
-  //Input P, l, S for Rider Force [lbs], Crank arm length [mm], Stress [psi]
+  //Initialize variables, we want to be specific     to decimal, using type double
+  double P, l, S, r;
+  double lin;
+  //Input P, l, S for Rider Force [lbs], Crank       arm   length [mm], Stress [psi]
+  
 
   //Convert l units to inches
 
-  //Calculate r = cbrt[(1*p)/(pi*S)] and pi = 3.1415926535
+  //Calculate r = cbrt[(1*p)/(pi*S)] and pi =        3.1415926535
 
   //Display r
   
- 
+  
+  
+  
+  return 0;
 }
