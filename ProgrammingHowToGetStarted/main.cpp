@@ -26,7 +26,9 @@ int main()
   //Convert l units to inches
   lin = 1/25.4;
   
-  //Calculate r = cbrt[(1*p)/(pi*S)] and pi =        3.1415926535
+  //Calculate r = cbrt[(l*P)/(pi*S)] and pi =        3.1415926535
+  r = cbrt[(lin*P)/(pi*S)]
+    
 
   //Display r
   
