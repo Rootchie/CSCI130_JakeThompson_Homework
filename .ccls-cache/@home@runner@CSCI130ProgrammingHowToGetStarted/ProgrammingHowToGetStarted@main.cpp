@@ -9,7 +9,7 @@ int main()
   //Initialize variables, we want to be specific     to decimal, using type double
   double P, l, S, r;
   double lin;
-  
+  const double pi = 3.1415926535;
   //Input P, l, S for Rider Force [lbs], Crank       arm   length [mm], Stress [psi]
   cout << "Enter Rider Force (P) in lbs: ";
   cin >> P;
@@ -26,10 +26,9 @@ int main()
   //Convert l units to inches
   lin = 1/25.4;
   
-  //Calculate r = cbrt[(l*P)/(pi*S)] and pi =        3.1415926535
-  r = cbrt[(lin*P)/(pi*S)]
+  //Calculate r = cbrt((l*P)/(pi*S)) and pi =        3.1415926535
+  r = cbrt((lin*P)/(pi*S));
     
-
   //Display r
   
   
