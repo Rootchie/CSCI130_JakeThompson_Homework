@@ -5,7 +5,6 @@
 # make or make compile triggers the following rule
 compile:
 	g++ main1.cpp
-  
 
 # rule for running programming
 # make run triggers the following rule
