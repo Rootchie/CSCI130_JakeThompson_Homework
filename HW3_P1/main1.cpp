@@ -27,7 +27,7 @@ int main()
   cout << "A = " << A << endl;
   
   //input values for equation(1)
-  cout << "r = "; //growth rate parameter
+  cout << "\nr = "; //growth rate parameter
   cin >> r;
   cout << endl;
 
@@ -38,21 +38,9 @@ int main()
   //convert t(weeks to t(days) since the time point is displayed in weeks
   t = t*7;
 
-  
-  
-  
-  
-  
-  
-  
-  
+  //find C(t) using equation(1), and display C(t) value
+  Ct = pow((((r/m)*t)+A), m); //cumulative number of cases in time
+  cout << "C(t) = " << Ct << endl;
 
-  
-  
-  
-  
-  
-  
-  
-  
+  return 0;
 }
