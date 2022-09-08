@@ -20,7 +20,10 @@ int main()
   cout << "C(0) = ";
   cin >> C0;
   cout << endl;
-
+  //find A using equation(2), and display A value
+  A = pow(C0, 1/m);
+  cout << "A = " << A << endl;
+  
   
   
   
