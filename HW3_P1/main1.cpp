@@ -45,7 +45,7 @@ int main()
   //cout << setprecision(2) << fixed;
   cout << fixed << showpoint;
   cout << "C(" << t/7.0 << ") = " << Ct << endl;
-
+  
   cout << setprecision(0) << fixed;
   cout << "C(" << t/7.0 << ") = " << setprecision(0) << scientific << Ct << endl;
 
@@ -57,7 +57,10 @@ int main()
   
   cout << "We recommend trying the following time points: \n";
   cout << setw(5) << 10 << setw(7) << 20 << setw(7) << 50 << endl;
-  
 
+  cout << "We recommend trying the following time points: \n";
+  cout << setw(5) << setfill('*') << 10;
+  cout << setw(7) << setfill('*') << 20;
+  cout << setw(7) << setfill('#') << 50 << endl;
   return 0;
 }
