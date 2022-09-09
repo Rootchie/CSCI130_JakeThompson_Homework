@@ -42,8 +42,11 @@ int main()
   Ct = pow((((r/m)*t)+A), m); //cumulative number of cases in time
   cout << "C(t) = " << Ct << endl;
 
-  cout << setprecision(2) << fixed;
+  //cout << setprecision(2) << fixed;
+  cout << fixed << showpoint;
   cout << "C(" << t/7.0 << ") = " << Ct << endl;
+
+  
 
   return 0;
 }
