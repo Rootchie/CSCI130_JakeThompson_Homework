@@ -55,7 +55,8 @@ int main()
   cout << "\n";
   cout << setw(10) << "C(" << t/7.0 << ") = " << Ct << endl;
   
-
+  cout << "We recommend trying the following time points: \n";
+  cout << setw(5) << 10 << setw(7) << 20 << setw(7) << 50 << endl;
   
 
   return 0;
