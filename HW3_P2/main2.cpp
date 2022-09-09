@@ -31,7 +31,8 @@ int main()
 
   //find slope
   S = ((y2 - y1)/(x2 - x1));
-  cout << "S = " << S << endl;
+  cout << setprecision(2) << fixed;
+  cout << "The value of the slope is " << setprecision(2) << S << endl;
 
   return 0;
 }
