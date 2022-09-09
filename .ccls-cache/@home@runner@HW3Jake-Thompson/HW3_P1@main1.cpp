@@ -46,6 +46,10 @@ int main()
   cout << fixed << showpoint;
   cout << "C(" << t/7.0 << ") = " << Ct << endl;
 
+  cout << setprecision(0) << fixed;
+  cout << "C(" << t/7.0 << ") = " << setprecision(2) << Ct << endl;
+  
+
   
 
   return 0;
