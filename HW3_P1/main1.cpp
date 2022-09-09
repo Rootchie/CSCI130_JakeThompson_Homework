@@ -43,12 +43,11 @@ int main()
   cout << "C(t) = " << Ct << endl;
 
   //cout << setprecision(2) << fixed;
-  cout << fixed << showpoint;
-  cout << "C(" << t/7.0 << ") = " << Ct << endl;
+  //cout << fixed << showpoint;
+  //cout << "C(" << t/7.0 << ") = " << Ct << endl;
 
-  cout << setprecision(2) << fixed;
-  cout << scientific;
-  cout << "C(" << t/7.0 << ") = " << setprecision(2) << Ct << endl;
+  cout << setprecision(0) << fixed;
+  cout << "C(" << t/7.0 << ") = " << setprecision(0) << scientific << Ct << endl;
   
 
   
