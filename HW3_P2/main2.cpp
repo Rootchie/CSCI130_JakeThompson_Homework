@@ -29,7 +29,9 @@ int main()
   cin >> y2;
   cout << endl;
 
- 
+  //find slope
+  S = ((y2 - y1)/(x2 - x1));
+  cout << "S = " << S << endl;
   
 
 
