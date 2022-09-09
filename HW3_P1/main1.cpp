@@ -51,9 +51,9 @@ int main()
 
   //test formatting from setw
   cout << setprecision(0) << fixed;
-  cout << setw(40) << "Your input is being evaluated...";
+  cout << setw(10) << "Your input is being evaluated...";
   cout << "\n";
-  cout << setw(40) << "C(" << t/7.0 << ") = " << Ct << endl;
+  cout << setw(10) << "C(" << t/7.0 << ") = " << Ct << endl;
   
 
   
