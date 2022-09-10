@@ -13,5 +13,6 @@ int main()
   int H, M;
   cin >> H, M;
   cout << endl;
+  M += 15;
   
 }
