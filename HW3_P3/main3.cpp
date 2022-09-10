@@ -22,28 +22,28 @@ int main()
   double E, R, RC, t, e, i;
 
   //prompt user input for variables
-  cout << "Battery voltage = ";
+  cout << "Battery voltage(E) = ";
   cin >> E;
   cout << endl;
 
-  cout << "Resister value = ";
+  cout << "Resistor value(R) = ";
   cin >> R;
-  cout << endl;
-
-  cout << "Time after the switch is closed = ";
-  cin >> t;
   cout << endl;
 
   e = 2.71828;
   cout << "Euler's number(e) = " << e << endl;
 
-  cout << "\nTime constant = ";
+  cout << "\nTime after the switch is closed(t) = ";
+  cin >> t;
+  cout << endl;
+  
+  cout << "Time constant(RC) = ";
   cin >> RC;
   cout << endl;
 
-  //find i using i = (E/R)*pow(e, (-t/RC))
-  i = (E/R)*pow(e, (-t/RC));
-  cout << "Current flowing through RC curcuit = " << i << endl;
+  //find i using i = (E/R)*pow(e,(-t*RC))
+  i = (E/R)*pow(e,(-t*RC));
+  cout << "Current flowing through RC curcuit = " << i << " amps" << endl;
 
   return 0;
 }
