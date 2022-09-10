@@ -15,15 +15,15 @@ int main()
   cout endl;
   if (a,b)
   {
-    cout << a << setfill(' ') << b << endl;
+    cout << a <<' '<< b << endl;
   }
     else if (b<a)
     {
-      cout << b << setfill(' ') << a << endl;
+      cout << b <<' '<< a << endl;
     }
   else
   {
-    cout << a << setfill(' ') << b << endl;
+    cout << a <<' '<< b << endl;
   }
   return 0;
 }
