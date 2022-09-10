@@ -4,14 +4,12 @@
 //Date: 09/09/2022
 
 #include <iostream>
-#include <cmath>
-#include <iomanip>
 using namespace std;
 
 int main()
 {
   int H, M;
-  cin >> H, M;
+  cin >> H >> M;
   cout << endl;
   M += 15;
   if(M/60 == 0){
