@@ -17,7 +17,7 @@ int main()
   {
     cout << a << setfill(' ') << b << endl;
   }
-    else (b<a)
+    else if (b<a)
     {
       cout << b << setfill(' ') << a << endl;
     }
