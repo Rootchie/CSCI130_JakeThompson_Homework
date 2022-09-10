@@ -22,4 +22,7 @@ int main()
   }
   if(H < 0){
     h += 24;
-  
+  }
+  cout << h <<' '<< m;
+  return 0
+}
