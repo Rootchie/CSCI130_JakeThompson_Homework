@@ -12,8 +12,8 @@ int main()
 {
   int a, b;
   cin >> a >> b;
-  cout endl;
-  if (a,b)
+  cout << endl;
+  if (a<b)
   {
     cout << a <<' '<< b << endl;
   }
