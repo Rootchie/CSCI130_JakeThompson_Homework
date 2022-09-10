@@ -10,7 +10,6 @@ int main()
 {
   int H, M;
   cin >> H >> M;
-  cout << endl;
   M += 15;
   if(M/60 == 0){
     H -= 1;
@@ -22,5 +21,5 @@ int main()
     H += 24;
   }
   cout << H <<' '<< M;
-  return 0
+  return 0;
 }
