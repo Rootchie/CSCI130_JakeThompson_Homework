@@ -21,6 +21,6 @@ int main()
   if(H < 0){
     H += 24;
   }
-  cout << H <<' '<< H;
+  cout << H <<' '<< M;
   return 0
 }
