@@ -21,8 +21,8 @@ int main()
     M = M % 60;
   }
   if(H < 0){
-    h += 24;
+    H += 24;
   }
-  cout << h <<' '<< m;
+  cout << H <<' '<< H;
   return 0
 }
