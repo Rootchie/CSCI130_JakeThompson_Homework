@@ -10,7 +10,17 @@ using namespace std;
 int main()
 {
   int R, C, p;
+  
+  cin >> R;
+  cout endl;
+  
+  cin >> R;
+  cout endl;
+  
   p = (((R-C)*(R-C))/(R*R))*100;
+  cout << p << setprecision(6) << endl;
+  
+  return 0;
   
 
 
