@@ -14,5 +14,9 @@ int main()
   cin >> H, M;
   cout << endl;
   M += 15;
+  if(M/60 == 0){
+    H -= 1;
+  }
+  
   
 }
