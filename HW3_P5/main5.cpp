@@ -11,5 +11,19 @@ using namespace std;
 int main()
 {
   int a, b;
-  
+  cin >> a >> b;
+  cout endl;
+  if (a,b)
+  {
+    cout << a << setfill(' ') << b << endl;
+  }
+    else (b<a)
+    {
+      cout << b << setfill(' ') << a << endl;
+    }
+  else
+  {
+    cout << a << setfill(' ') << b << endl;
+  }
+  return 0;
 }
