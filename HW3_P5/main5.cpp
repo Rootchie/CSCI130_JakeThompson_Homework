@@ -4,7 +4,6 @@
 //Date: 09/09/2022
 
 #include <iostream>
-#include <cmath>
 #include <iomanip>
 using namespace std;
 
