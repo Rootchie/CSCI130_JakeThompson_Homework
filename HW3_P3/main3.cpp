@@ -41,16 +41,9 @@ int main()
   cin >> RC;
   cout << endl;
 
-  
-  
-    
+  //find i using i = (E/R)*pow(e, (-t/RC))
+  i = (E/R)*pow(e, (-t/RC));
+  cout << "Current flowing through RC curcuit = " << i << endl;
 
-  
-  
-    
-  
-  
-
-  
-  
+  return 0;
 }
