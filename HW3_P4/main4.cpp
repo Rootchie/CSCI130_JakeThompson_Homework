@@ -9,20 +9,14 @@ using namespace std;
 
 int main()
 {
-  int R, C, p;
-  
+  double R, C, p;
   cin >> R;
   cout endl;
-  
   cin >> R;
   cout endl;
-  
   p = (((R-C)*(R-C))/(R*R))*100;
-  cout << p << setprecision(6) << endl;
-  
+  cout << setprecision(6) << fixed;
+  cout << showpoint << fixed;
+  cout << p << endl;
   return 0;
-  
-
-
-  
 }
