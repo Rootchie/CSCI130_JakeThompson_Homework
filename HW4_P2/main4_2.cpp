@@ -25,5 +25,7 @@ int main()
   else
   {
     cout << "The first number is smaller" << endl;
-  }
+  } 
+  // when input 5 and 8, output is "The first number is smaller"
+  // when input 11 and 2, output is  "The first number is smaller"
 }
