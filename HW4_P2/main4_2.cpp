@@ -10,11 +10,11 @@ using namespace std;
 int main() 
 {
   int a, b;
-  cout << "Number 1(a) = " << endl;
+  cout << "Number 1(a) = ";
   cin >> a;
   cout << endl;
 
-  cout << "Number 2(b) = " << endl;
+  cout << "Number 2(b) = ";
   cin >> b;
   cout << endl;
 
