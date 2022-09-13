@@ -17,5 +17,13 @@ int main()
   cout << "Number 2(b) = " << endl;
   cin >> b;
   cout << endl;
- 
+
+  if (a > b)
+  {
+    cout << "The first number is greater" << endl;
+  }
+  else
+  {
+    cout << "The first number is smaller" << endl;
+  }
 }
