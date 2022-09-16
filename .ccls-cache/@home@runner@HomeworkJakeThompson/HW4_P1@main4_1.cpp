@@ -23,5 +23,6 @@ int main()
   cout << (!(a * b)) << endl;
   cout << (!(a % b * c)) << endl;
   cout << (!(c % b * a)) << endl;
-  cout << (b % c * a) << endl;
+  cout << b % c * a;
+  cout << endl;
 }
