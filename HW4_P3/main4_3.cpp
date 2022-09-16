@@ -27,13 +27,8 @@ int main()
     for (int k = 0; k < fac_val; k++){
       value = value * (k + 1);
     }
-  //intermediate test
-    cout << value;
-    
   //find and output the last digit (value % 10)
+  cout << value % 10 << endl;
   }
-   
-    
-    
-    
+return 0;
 }
