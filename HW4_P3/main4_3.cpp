@@ -12,9 +12,13 @@ int main()
 {
   //read in the # of test cases
   int num_cases;
-  cin > num_cases;
+  cin >> num_cases;
   
   //need a loop to run all test cases
+  for (int i = 0; i < num_cases; i++)
+    {
+      
+    }
     //read in value for calculation
     //make calculation (this may require a loop)
     //find and output the last digit (value % 10)
