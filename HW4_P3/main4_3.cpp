@@ -1,5 +1,5 @@
 //Programmer: Jake Thompson
-//Description: HW4_P2 Kattis Last Factorial Digit
+//Description: HW4_P3 Kattis Last Factorial Digit
 //https://open.kattis.com/problems/lastfactorialdigit
 //Date: 09/13/2022
 
