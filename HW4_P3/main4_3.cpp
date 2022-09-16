@@ -22,14 +22,16 @@ int main()
   //read in value for calculation
     cin >> fac_val;
     int value = 1;
+    
   //make calculation (this may require a loop)
-  for (int k = 0; k < fac_val; k++){
-    value = value * (k + 1);
+    for (int k = 0; k < fac_val; k++){
+      value = value * (k + 1);
     }
   //intermediate test
     cout << value;
+    
   //find and output the last digit (value % 10)
-    }
+  }
    
     
     
