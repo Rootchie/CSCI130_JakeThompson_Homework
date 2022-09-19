@@ -10,10 +10,12 @@ using namespace std;
 
 int main() 
 {
-  // declare integer cases, being number of cases
-  
+  // declare and read in integer cases, being number of cases
+  int cases;
+  cin >> cases;
   // declare variables for x(t)
-  
+  double V0, Angle, deltaX, h1, h2;
+  double toRadians = acos(-1) / 180;
   // declare the variable needed to change angle from degrees to radian
   
   // create a while that, while (cases - 1) is greater than zero, time and deltaY are calculated
@@ -22,3 +24,4 @@ int main()
   
   // else output Not Safe
   }
+  
