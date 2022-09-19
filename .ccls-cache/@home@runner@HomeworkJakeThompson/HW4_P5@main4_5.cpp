@@ -1,7 +1,7 @@
 // Programmer: Jake Thompson
-// Description: HW4_P4 Kattis Jumbo Javelin
-// https://open.kattis.com/problems/jumbojavelin
-// Date: 09/16/2022
+// Description: HW4_P5 Kattis Jumbo Javelin
+// https://open.kattis.com/problems/humancannonball2
+// Date: 09/18/2022
 
 #include <cmath>
 #include <iomanip>
