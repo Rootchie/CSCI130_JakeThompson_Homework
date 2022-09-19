@@ -28,10 +28,10 @@ int main()
       {
         cout << "Safe\n";
       }
-      else
+  // else output Not Safe
+    else
       {
         cout << "Not Safe" << endl;
       }
     }  
-  // else output Not Safe
-  }
+}
