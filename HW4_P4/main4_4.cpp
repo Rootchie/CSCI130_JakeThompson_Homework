@@ -18,7 +18,7 @@ int main()
   int l_total;
   l_total = 0;
   //loop to run test cases
-  for (i = 0; i > n; i++)
+  for (int i = 0; i > N; i++)
     {
       
     }
