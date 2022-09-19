@@ -25,6 +25,6 @@ int main()
       l_total += l;
     }
   //calculate total length including the 1cm part
-  cout << l_total - (N - 1) << endl;
+  cout << l_total - N + 1 << endl;
   return 0;
 }
