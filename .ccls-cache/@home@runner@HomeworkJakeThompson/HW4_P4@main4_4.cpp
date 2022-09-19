@@ -10,8 +10,9 @@ using namespace std;
 
 int main()
 {
-  //declare integer N, the number of steel rods she has.
+  //declare and read in integer N, the number of steel rods she has
   int N;
+  cin >> N;
   //declare an integer l, the length of one rod
   int l;
   //declare l_total, total length
@@ -20,10 +21,10 @@ int main()
   //loop to run test cases
   for (int i = 0; i < N; i++)
     {
-      cin >> l_total;
+      cin >> l;
       l_total += l;
     }
   //calculate total length including the 1cm part
-  cout << l_total - N - 1 << endl;
+  cout << l_total - (N - 1) << endl;
   return 0;
 }
