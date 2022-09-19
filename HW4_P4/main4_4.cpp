@@ -18,7 +18,7 @@ int main()
   int l_total;
   l_total = 0;
   //loop to run test cases
-  for (int i = 0; i > N; i++)
+  for (int i = 0; i < N; i++)
     {
       cin >> l_total;
       l_total += l;
