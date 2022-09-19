@@ -24,11 +24,7 @@ int main()
     double time = deltaX / V0 / cos(Angle * toRadians);
     double deltaY = V0 * time * sin(Angle * toRadians) - .5 * 9.81 * time * time;
   // if deltaY >= h1 + 1 and deltaY <= h2 - 1 output Safe
-      if (deltaY >= h1 + 1)
-      {
-        cout << "Safe\n";
-      }
-      else if (deltaY <= h2 - 1)
+    if ((deltaY >= h1 + 1) && (deltaY <= h2 - 1))
       {
         cout << "Safe\n";
       }
