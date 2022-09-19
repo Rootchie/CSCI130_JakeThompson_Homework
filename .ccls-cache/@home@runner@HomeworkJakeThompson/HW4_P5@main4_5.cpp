@@ -15,8 +15,9 @@ int main()
   cin >> cases;
   // declare variables for x(t)
   double V0, Angle, deltaX, h1, h2;
-  double toRadians = acos(-1) / 180;
   // declare the variable needed to change angle from degrees to radian
+  double toRadians = acos(-1) / 180;
+  
   
   // create a while that, while (cases - 1) is greater than zero, time and deltaY are calculated
   
