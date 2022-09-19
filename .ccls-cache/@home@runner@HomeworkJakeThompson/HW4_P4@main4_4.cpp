@@ -11,11 +11,12 @@ using namespace std;
 int main()
 {
   //read in integer N, the number of steel rods she has.
-
+  int N;
   //declare an integer l, the length of one rod
-
+  int l;
   //declare l_total, total length
-
+  int l_total;
+  l_total = 0;
   //loop to run test cases
 
   //calculate total length including the 1cm part
