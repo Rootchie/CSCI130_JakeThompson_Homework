@@ -18,7 +18,10 @@ int main()
   int l_total;
   l_total = 0;
   //loop to run test cases
-
+  for (i = 0; i > n; i++)
+    {
+      
+    }
   //calculate total length including the 1cm part
   
 }
