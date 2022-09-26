@@ -18,7 +18,13 @@ int main()
   const double K3 = 0.3965;
   
   //for loop Temp
+  for (int Temp = 2; Temp <= 10; Temp += 4)
+  {
     //for loop Wind speed
-    //calculate wind speed
-    //display measured temp, wind speed, wind chill
+    for (int WindSpeed = 5; WindSpeed <= 11; WindSpeed += 2)
+    {
+      //calculate wind speed
+      //display measured temp, wind speed, wind chill
+    }
+  }    
 }
