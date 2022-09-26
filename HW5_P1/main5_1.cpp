@@ -8,8 +8,7 @@
 #include <string>
 using namespace std;
 
-int main() 
-{
+int main() {
   // declare variables
   string firstName;
   string date;
@@ -55,12 +54,11 @@ int main()
   // report prevalence as % with 2 decimals
   outFile << fixed << showpoint << setprecision(2);
   outFile << "The prevalence is ";
-  outFile << ( (static_cast<double>(cumulative_cases)) /count )*100;
+  outFile << ((static_cast<double>(cumulative_cases)) / count) * 100;
   outFile << " %" << endl;
 
   inFile.close();
   outFile.close();
-  
+
   return 0;
-  
 }
