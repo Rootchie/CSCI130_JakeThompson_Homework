@@ -21,7 +21,6 @@ int main()
   {                            //then output true statement for modulo [42]
     int num_values;
     cin >> num_values; //input ten values into for loop for mod math
-     
-    
+    modulo [num_values % 42] = true;
   }
 }
