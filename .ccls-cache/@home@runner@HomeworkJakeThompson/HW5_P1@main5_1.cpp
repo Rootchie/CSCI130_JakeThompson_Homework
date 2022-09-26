@@ -42,8 +42,8 @@ int main() {
     inFile >> firstName;
     inFile >> TestResult;
   }
-  cout << "Total Number Cases = " << cumulative_cases << endl;
-  cout << "Number of person tested = " << count << endl;
+  outFile << "Total Number Cases = " << cumulative_cases << endl;
+  outFile << "Number of person tested = " << count << endl;
   inFile.close();
 
   // open the input file
