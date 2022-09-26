@@ -16,8 +16,16 @@ int main()
   double At;
 
   //read in variables (number of lawns and seed cost)
-  cin >> NumLawns;
-  cin >> SeedCost;
+  cin >> NumLawns >> SeedCost;
 
-  
+  //loop for calculating area
+  for (int i = 0; i < NumLawns; i++)
+  {
+    //initialize variables for calculation
+    double length;
+    double width;
+
+    //read in variables
+    cin >> length >> width;
+  }
 }
