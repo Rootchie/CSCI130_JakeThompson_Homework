@@ -23,4 +23,6 @@ int main()
     cin >> num_values; //input ten values into for loop for mod math
     modulo [num_values % 42] = true;
   }
+
+  int dist_value = 0;
 }
