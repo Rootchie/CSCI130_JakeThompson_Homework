@@ -33,4 +33,6 @@ int main()
       dist_value++;
     }
   }
+  cout << "The distinct value is: " << dist_value << endl;
+  return 0;
 }
