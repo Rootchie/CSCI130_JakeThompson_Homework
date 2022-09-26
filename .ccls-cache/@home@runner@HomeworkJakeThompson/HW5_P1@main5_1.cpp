@@ -51,4 +51,11 @@ int main() {
 
   // open the output file
   outFile.open("AnalyzedData.txt");
+
+  // read in the date - first line of file
+  inFile >> date;
+  cout << date << endl;
+  
+  // add date to the output file as the first line
+  outFile << date << endl;
 }
