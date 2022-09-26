@@ -11,7 +11,6 @@ using namespace std;
 int main()
 {
   bool modulo [42];
-  cout << "Enter ten number values: " << endl;
 
   for (int i = 0; i < 42; i++) //loop for bool modulo [42] value
   {
@@ -33,6 +32,6 @@ int main()
       dist_value++;
     }
   }
-  cout << "The distinct value is: " << dist_value << endl;
+  cout << dist_value << endl;
   return 0;
 }
