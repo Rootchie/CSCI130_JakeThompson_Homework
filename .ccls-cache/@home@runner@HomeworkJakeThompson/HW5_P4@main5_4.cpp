@@ -17,4 +17,11 @@ int main()
   {
     modulo [1] = false;
   }
+  for (int k = 0; k < 10; k++) //use mod math with number inputs
+  {                            //then output true statement for modulo [42]
+    int num_values;
+    
+     
+    
+  }
 }
