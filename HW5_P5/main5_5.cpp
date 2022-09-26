@@ -16,7 +16,8 @@ int main()
   double At;
 
   //read in variables (number of lawns and seed cost)
-  cin >> NumLawns >> SeedCost;
+  cin >> NumLawns;
+  cin >> SeedCost;
 
   //loop for calculating area
   for (int i = 0; i < NumLawns; i++)
@@ -29,7 +30,7 @@ int main()
     cin >> length >> width;
 
     //use equation for area of square/rectangle
-    At += length * width;
+    At += (length * width);
   }
   cout << setprecision(6) << fixed;
   cout << SeedCost * At << endl;
