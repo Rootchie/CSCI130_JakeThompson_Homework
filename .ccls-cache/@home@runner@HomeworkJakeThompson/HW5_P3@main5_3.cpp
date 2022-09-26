@@ -23,7 +23,8 @@ int main()
     //for loop Wind speed
     for (int WindSpeed = 5; WindSpeed <= 11; WindSpeed += 2)
     {
-      //calculate wind speed
+      //calculate wind chill
+      double 
       //display measured temp, wind speed, wind chill
     }
   }    
