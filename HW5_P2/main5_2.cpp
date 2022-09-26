@@ -16,9 +16,9 @@ int main()
   inFile.open("NumberData1.txt");
 
   // load all data in while loop
-  while (!inFile.eof()) 
+  while (inFile >> dataTemp) 
   {
     inFile >> dataTemp;
-    cout << dataTemp << endl;
+    //cout << dataTemp << endl;
   }
 }
