@@ -30,7 +30,7 @@ int main()
     cin >> length >> width;
 
     //use equation for area of square/rectangle
-    At += (length * width);
+    At += length * width;
   }
   cout << setprecision(6) << fixed;
   cout << SeedCost * At << endl;
