@@ -1,9 +1,23 @@
 // Programmer: Jake Thompson
-// Description: 
-// 
-// Date: 09//2022
+// Description: Kattis Grass Seed Inc.
+// https://open.kattis.com/problems/grassseed
+// Date: 09/25/2022
 
 #include <cmath>
 #include <iomanip>
 #include <iostream>
 using namespace std;
+
+int main()
+{
+  //initialize variables
+  int NumLawns;
+  double SeedCost;
+  double At;
+
+  //read in variables (number of lawns and seed cost)
+  cin >> NumLawns;
+  cin >> SeedCost;
+
+  
+}
