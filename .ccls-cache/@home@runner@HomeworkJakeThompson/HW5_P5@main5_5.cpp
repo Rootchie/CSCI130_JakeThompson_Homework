@@ -27,5 +27,8 @@ int main()
 
     //read in variables
     cin >> length >> width;
+
+    //use equation for area of square/rectangle
+    At += length * width;
   }
 }
