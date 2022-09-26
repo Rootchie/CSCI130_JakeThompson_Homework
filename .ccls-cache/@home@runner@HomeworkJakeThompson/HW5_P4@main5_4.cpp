@@ -15,7 +15,7 @@ int main()
 
   for (int i = 0; i < 42; i++) //loop for bool modulo [42] value
   {
-    modulo [1] = false;
+    modulo [i] = false;
   }
   for (int k = 0; k < 10; k++) //use mod math with number inputs
   {                            //then output true statement for modulo [42]
