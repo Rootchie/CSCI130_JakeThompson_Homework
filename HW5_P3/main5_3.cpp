@@ -9,11 +9,14 @@ using namespace std;
 
 int main()
 {
-  //initialize int variable for Measured Temp
-  //Initialize int variable for wind speed
+  int Temp; //initialize int variable for Measured Temp
+  int WindSpeed; //Initialize int variable for wind speed
 
   //const double for conversion factors
-
+  const double K1 = 13.12;
+  const double K2 = 11.37;
+  const double K3 = 0.3965;
+  
   //for loop Temp
     //for loop Wind speed
     //calculate wind speed
