@@ -49,6 +49,9 @@ int main() {
   // open the input file
   inFile.open("TestResultsData.dat");
 
+  // close the output file
+  outFile.close();
+
   // open the output file
   outFile.open("AnalyzedData.txt");
 
