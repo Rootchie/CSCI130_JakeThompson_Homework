@@ -27,6 +27,10 @@ int main()
 
   for (int g = 0; g < 42; g++)
   {
-    
+    if (modulo [g]) //if modulo is less than 42
+                    //then distinct values add up until limit is reached
+    {
+      dist_value++;
+    }
   }
 }
