@@ -24,8 +24,12 @@ int main()
     for (int WindSpeed = 5; WindSpeed <= 11; WindSpeed += 2)
     {
       //calculate wind chill
-      double 
+      double WCI = K1 + 0.06125 * Temp - K2 * pow(WindSpeed, 0.16) + K3 * Temp * pow(WindSpeed, 0.16);
       //display measured temp, wind speed, wind chill
+      cout << "Measured Temperature = " << Temp << " C" << endl;
+      cout << "Wind Speed = " << WindSpeed << " km/hr" << endl;
+      cout << "Wind Chill Ind. = " << WCI << endl;
     }
   }    
+  return 0;
 }
