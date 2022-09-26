@@ -24,7 +24,8 @@ int main()
     if (dataTemp >= 0)
     {
       //update cumulative value of all data and number of points loaded
-      
+      sumData += dataTemp;
+      counter++;
     }
     else //the value is negative and we should exit
     {
@@ -33,4 +34,9 @@ int main()
       break;
     }
   }
+  cout << "The sum of valid data is: " << sumData << endl;
+  cout << "The number of valid data points is: " << counter << endl;
+  cout << "The average of the valid data is: " << (sumData/counter) << endl;
+
+  return 0;
 }
