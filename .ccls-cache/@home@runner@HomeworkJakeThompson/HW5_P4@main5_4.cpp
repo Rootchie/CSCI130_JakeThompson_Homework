@@ -3,6 +3,7 @@
 // https://open.kattis.com/problems/modulo
 // Date: 09/25/2022
 
+
 #include <cmath>
 #include <iomanip>
 #include <iostream>
