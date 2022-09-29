@@ -11,7 +11,10 @@ double powerGen(double H, double Q);
 
 int main()
 {
+  //test 1
   cout << powerGen(14, 20);
+  //test 2
+  cout << powerGen(30, 20);
   return 0;
 }
 
@@ -22,3 +25,5 @@ double powerGen(double H, double Q)
   double WaterDensity = 1000;
   return WaterDensity * Q * H * g;
 }
+//test 1 = 2.7468e+06, or 2746800 J/s
+//
