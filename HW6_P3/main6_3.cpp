@@ -15,5 +15,8 @@ int main()
 }
 double powerGen(double H, double Q)
 {
-  
+  double g = 9.81;
+  //1000kg/m^3
+  double WaterDensity = 1000;
+  return WaterDensity * Q * H * g;
 }
