@@ -11,8 +11,10 @@ double powerGen(double H, double Q);
 
 int main()
 {
-  
+  cout << powerGen(14, 20);
+  return 0;
 }
+
 double powerGen(double H, double Q)
 {
   double g = 9.81;
