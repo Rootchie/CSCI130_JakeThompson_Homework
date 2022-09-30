@@ -52,8 +52,9 @@ int main() {
   // HANDOUT (PART B): Inform the user who won.
   DetermineWinner(userPick, computerPick);
 
-  // HANDOUT (PART C): Randomly display celebratory messages if user won, lost or tied.
-GiveFeedback(userPick, computerPick);
+  // HANDOUT (PART C): Randomly display celebratory messages if user won, lost
+  // or tied.
+  GiveFeedback(userPick, computerPick);
   return 0;
 }
 
@@ -127,9 +128,8 @@ char ComputerSelectRPSLK() {
 
   return randPickChar;
 }
- void DetermineWinner(char userPick, char computerPick)
-{
-if (userPick == 'R') // When user picks Rock
+void DetermineWinner(char userPick, char computerPick) {
+  if (userPick == 'R') // When user picks Rock
   {
     if (computerPick == 'R')
       cout << "Tie." << endl;
@@ -178,252 +178,231 @@ if (userPick == 'R') // When user picks Rock
       cout << "You Win." << endl;
   }
 }
-void GiveFeedback(char userPick, char computerPick)
-{
-int MessagePick;
+void GiveFeedback(char userPick, char computerPick) {
+  int MessagePick;
   string RandMessage;
   srand(time(NULL));
   if (userPick == 'R') // When user picks Rock
   {
-    if (computerPick == 'R'){
+    if (computerPick == 'R') {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Dang, it's ok try again!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "It's alright, don't give up!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Dang, it's ok try again!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "It's alright, don't give up!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
-    else if ((computerPick == 'K') || (computerPick == 'P')){
+
+    else if ((computerPick == 'K') || (computerPick == 'P')) {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Dang, it's ok try again!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "It's alright, don't give up!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Dang, it's ok try again!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "It's alright, don't give up!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-     
-    else{
+
+    else {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Wow you are amazing!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "Holy moly you beat the computer!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Wow you are amazing!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "Holy moly you beat the computer!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
   }
 
   if (userPick == 'P') // When user picks Paper
   {
-    if (computerPick == 'P'){
+    if (computerPick == 'P') {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Dang, it's ok try again!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "It's alright, don't give up!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Dang, it's ok try again!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "It's alright, don't give up!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
-    else if ((computerPick == 'S') || (computerPick == 'L')){
+
+    else if ((computerPick == 'S') || (computerPick == 'L')) {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Dang, it's ok try again!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "It's alright, don't give up!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Dang, it's ok try again!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "It's alright, don't give up!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
-    else{
+
+    else {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Wow you are amazing!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "Holy moly you beat the computer!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Wow you are amazing!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "Holy moly you beat the computer!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
   }
 
   if (userPick == 'S') // When user picks Scissors
   {
-    if (computerPick == 'S'){
+    if (computerPick == 'S') {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Dang, it's ok try again!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "It's alright, don't give up!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Dang, it's ok try again!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "It's alright, don't give up!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
-    else if ((computerPick == 'R') || (computerPick == 'K')){
+
+    else if ((computerPick == 'R') || (computerPick == 'K')) {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Dang, it's ok try again!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "It's alright, don't give up!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Dang, it's ok try again!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "It's alright, don't give up!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
-    else{
+
+    else {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Wow you are amazing!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "Holy moly you beat the computer!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Wow you are amazing!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "Holy moly you beat the computer!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
   }
 
   if (userPick == 'L') // When user picks Lizard
   {
-    if (computerPick == 'L'){
+    if (computerPick == 'L') {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Dang, it's ok try again!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "It's alright, don't give up!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Dang, it's ok try again!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "It's alright, don't give up!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
-    else if ((computerPick == 'R') || (computerPick == 'S')){
+
+    else if ((computerPick == 'R') || (computerPick == 'S')) {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Dang, it's ok try again!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "It's alright, don't give up!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Dang, it's ok try again!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "It's alright, don't give up!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
-    else{
+
+    else {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Wow you are amazing!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "Holy moly you beat the computer!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Wow you are amazing!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "Holy moly you beat the computer!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
   }
 
   if (userPick == 'K') {
-    if (computerPick == 'K'){
+    if (computerPick == 'K') {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Dang, it's ok try again!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "It's alright, don't give up!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Dang, it's ok try again!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "It's alright, don't give up!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
-    else if ((computerPick == 'P') || (computerPick == 'L')){
+
+    else if ((computerPick == 'P') || (computerPick == 'L')) {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Dang, it's ok try again!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "It's alright, don't give up!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Dang, it's ok try again!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "It's alright, don't give up!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
-    else{
+
+    else {
       MessagePick = rand() % 2;
-  switch (MessagePick)
-  {
-  case 0:
-    RandMessage = "Wow you are amazing!";
-    cout << RandMessage << endl;
-    break;
-  case 1:
-    RandMessage = "Holy moly you beat the computer!";
-    cout << RandMessage << endl;
-    break;
-  }
+      switch (MessagePick) {
+      case 0:
+        RandMessage = "Wow you are amazing!";
+        cout << RandMessage << endl;
+        break;
+      case 1:
+        RandMessage = "Holy moly you beat the computer!";
+        cout << RandMessage << endl;
+        break;
+      }
     }
-      
-  }  
+  }
 }
