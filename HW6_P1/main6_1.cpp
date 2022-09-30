@@ -14,7 +14,7 @@ using namespace std;
 //////////////////// Prototype Functions /////////////////////////////////////
 void TranslatePick(int flag_who, char selection);
 char ComputerSelectRPSLK();
-
+void DetermineWinner(char userPick, char computerPick);
 //////////////////// MAIN ////////////////////////////////////////////////////
 int main() {
   // declare vars
@@ -48,55 +48,8 @@ int main() {
   TranslatePick(1, computerPick); // Inform user of computer selection
 
   // HANDOUT (PART A): Determine the winner of the game.
-  if (userPick == 'R') // When user picks Rock
-  {
-    if (computerPick == 'R')
-      cout << "Tie." << endl;
-    else if ((computerPick == 'K') || (computerPick == 'P'))
-      cout << "You Lose." << endl;
-    else
-      cout << "You Win." << endl;
-  }
-
-  if (userPick == 'P') // When user picks Paper
-  {
-    if (computerPick == 'P')
-      cout << "Tie." << endl;
-    else if ((computerPick == 'S') || (computerPick == 'L'))
-      cout << "You Lose." << endl;
-    else
-      cout << "You Win." << endl;
-  }
-
-  if (userPick == 'S') // When user picks Scissors
-  {
-    if (computerPick == 'S')
-      cout << "Tie." << endl;
-    else if ((computerPick == 'R') || (computerPick == 'K'))
-      cout << "You Lose." << endl;
-    else
-      cout << "You Win." << endl;
-  }
-
-  if (userPick == 'L') // When user picks Lizard
-  {
-    if (computerPick == 'L')
-      cout << "Tie." << endl;
-    else if ((computerPick == 'R') || (computerPick == 'S'))
-      cout << "You Lose." << endl;
-    else
-      cout << "You Win." << endl;
-  }
-
-  if (userPick == 'K') {
-    if (computerPick == 'K')
-      cout << "Tie." << endl;
-    else if ((computerPick == 'P') || (computerPick == 'L'))
-      cout << "You Lose." << endl;
-    else
-      cout << "You Win." << endl;
-  }
   // HANDOUT (PART B): Inform the user who won.
+  DetermineWinner(userPick, computerPick);
 
   // HANDOUT (PART C): Randomly display celebratory messages if user won.
 
@@ -173,4 +126,54 @@ char ComputerSelectRPSLK() {
 
   return randPickChar;
 }
-DetermineWinner()
+ void DetermineWinner(char userPick, char computerPick)
+{
+if (userPick == 'R') // When user picks Rock
+  {
+    if (computerPick == 'R')
+      cout << "Tie." << endl;
+    else if ((computerPick == 'K') || (computerPick == 'P'))
+      cout << "You Lose." << endl;
+    else
+      cout << "You Win." << endl;
+  }
+
+  if (userPick == 'P') // When user picks Paper
+  {
+    if (computerPick == 'P')
+      cout << "Tie." << endl;
+    else if ((computerPick == 'S') || (computerPick == 'L'))
+      cout << "You Lose." << endl;
+    else
+      cout << "You Win." << endl;
+  }
+
+  if (userPick == 'S') // When user picks Scissors
+  {
+    if (computerPick == 'S')
+      cout << "Tie." << endl;
+    else if ((computerPick == 'R') || (computerPick == 'K'))
+      cout << "You Lose." << endl;
+    else
+      cout << "You Win." << endl;
+  }
+
+  if (userPick == 'L') // When user picks Lizard
+  {
+    if (computerPick == 'L')
+      cout << "Tie." << endl;
+    else if ((computerPick == 'R') || (computerPick == 'S'))
+      cout << "You Lose." << endl;
+    else
+      cout << "You Win." << endl;
+  }
+
+  if (userPick == 'K') {
+    if (computerPick == 'K')
+      cout << "Tie." << endl;
+    else if ((computerPick == 'P') || (computerPick == 'L'))
+      cout << "You Lose." << endl;
+    else
+      cout << "You Win." << endl;
+  }
+}
