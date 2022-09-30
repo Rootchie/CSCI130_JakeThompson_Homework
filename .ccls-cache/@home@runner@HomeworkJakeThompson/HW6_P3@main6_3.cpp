@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std;
 
-double powerGen(double H, double Q);
+int powerGen(double H, double Q);
 
 int main()
 {
@@ -18,7 +18,7 @@ int main()
   return 0;
 }
 
-double powerGen(double H, double Q)
+int powerGen(double H, double Q)
 {
   double g = 9.81;
   //1000kg/m^3
