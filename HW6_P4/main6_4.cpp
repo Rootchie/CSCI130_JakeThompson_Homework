@@ -10,9 +10,10 @@ using namespace std;
 
 void zodiac_sign(int day, string month);
 int main() {
-  
+  int day;
+  string month;
   zodiac_sign(day, month);
-  
+  return 0;
 }
 void zodiac_sign(int day, string month) {
   string astro_sign = "";
