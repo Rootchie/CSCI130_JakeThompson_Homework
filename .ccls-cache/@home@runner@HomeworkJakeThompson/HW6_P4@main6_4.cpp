@@ -6,6 +6,7 @@
 #include <cmath>
 #include <iomanip>
 #include <iostream>
+#include <string>
 using namespace std;
 
 void zodiac_sign(int day, string month);
