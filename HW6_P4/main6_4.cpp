@@ -20,3 +20,10 @@ void zodiac_sign(int day, string month)
     // valid range of a specified zodiac
     cin >> day;
     cin >> month;
+    if (month == "Dec"){
+         
+        if (day < 22)
+        astro_sign = "Sagittarius";
+        else
+        astro_sign ="Capricorn";
+    }
