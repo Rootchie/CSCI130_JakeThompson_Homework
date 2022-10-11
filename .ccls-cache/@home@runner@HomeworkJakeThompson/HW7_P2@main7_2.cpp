@@ -14,4 +14,8 @@ void time(int seconds, int hours, int mins, int secs) {
   hours = seconds / 3600;
   // subtract hours from seconds
   seconds = seconds - (hours * 3600);
+  // same for minutes
+  mins = seconds / 60;
+  seconds = mins - (mins * 60);
+  
 }
