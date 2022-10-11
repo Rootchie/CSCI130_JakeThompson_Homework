@@ -9,4 +9,7 @@ void time(int seconds, int hours, int mins, int secs);
 int main() {
   
 }
- void time(int seconds, int hours, int mins, int secs)
+void time(int seconds, int hours, int mins, int secs) {
+  // how many hours in seconds
+  hours = seconds / 3600;
+}
