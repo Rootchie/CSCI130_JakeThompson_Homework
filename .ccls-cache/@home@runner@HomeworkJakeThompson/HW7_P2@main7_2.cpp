@@ -14,7 +14,7 @@ int main() {
   time(3600, hours, mins, seconds);
   return 0;
 }
-void time(int seconds, int hours, int mins, int secs) {
+void time(int seconds, int& hours, int& mins, int& secs) {
   // how many hours in seconds
   hours = seconds / 3600;
   // subtract hours from seconds
