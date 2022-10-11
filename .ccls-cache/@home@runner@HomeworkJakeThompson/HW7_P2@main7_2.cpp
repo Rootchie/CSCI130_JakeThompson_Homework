@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-void time(int seconds, int hours, int mins, int secs);
+void time(int seconds, int& hours, int& mins, int& secs);
 int main() {
   int hours, seconds, mins, secs;
   cout << "Input seconds: ";
