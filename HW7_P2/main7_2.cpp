@@ -25,5 +25,9 @@ void time(int seconds, int hours, int mins, int secs) {
   // remainder of seconds = secs
   secs = seconds;
   
+  cout << "Equivalent number of hours = " << hours << endl;
+  cout << "Equivalent number of minutes = " << mins << endl;
+  cout << "Remaining seconds = " << secs << endl;
+  
   return;
 }
