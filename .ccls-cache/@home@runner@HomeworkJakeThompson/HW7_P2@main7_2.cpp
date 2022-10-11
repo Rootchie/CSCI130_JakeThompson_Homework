@@ -17,5 +17,6 @@ void time(int seconds, int hours, int mins, int secs) {
   // same for minutes
   mins = seconds / 60;
   seconds = mins - (mins * 60);
-  
+  // remainder of seconds = secs
+  secs = seconds;
 }
