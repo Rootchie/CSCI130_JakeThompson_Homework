@@ -8,7 +8,7 @@ using namespace std;
 void time(int seconds, int hours, int mins, int secs);
 int main() {
   int hours, seconds, mins;
-  
+  time(3600, hours, mins, seconds);
 }
 void time(int seconds, int hours, int mins, int secs) {
   // how many hours in seconds
