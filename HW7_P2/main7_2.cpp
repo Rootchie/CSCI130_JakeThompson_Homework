@@ -7,8 +7,12 @@ using namespace std;
 
 void time(int seconds, int hours, int mins, int secs);
 int main() {
-  int hours, seconds, mins;
+  int hours, seconds, mins, secs;
+  cout << "Input seconds: ";
+  cin >> seconds;
+  cout << endl;
   time(3600, hours, mins, seconds);
+  return 0;
 }
 void time(int seconds, int hours, int mins, int secs) {
   // how many hours in seconds
@@ -20,4 +24,6 @@ void time(int seconds, int hours, int mins, int secs) {
   seconds = mins - (mins * 60);
   // remainder of seconds = secs
   secs = seconds;
+  
+  return;
 }
