@@ -24,6 +24,12 @@ int main() {
        << setw(10) << "Current"
        << setw(4) << ' '
        << setw(10) << "Power" << endl;
-  
-  
+
+  for (int i = 0; i < 5; i++) {
+    cout << setw(10) << resistance[i]
+         << setw(4) << ' '
+         << setw(10) << current[i]
+         << setw(4) << ' '
+         << setw(10) << power[i] << endl;
+  }
 }
