@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -18,6 +19,11 @@ int main() {
     power[i] = resistance[i] *  pow(current[i], 2);
   }
   cout << setprecision(2);
+  cout << setw(10) << "Resistance"
+       << setw(4) << ' '
+       << setw(10) << "Current"
+       << setw(4) << ' '
+       << setw(10) << "Power" << endl;
   
   
 }
