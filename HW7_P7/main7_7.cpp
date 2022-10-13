@@ -1,6 +1,7 @@
 // Programmer: Jake Thompson
 // Description: Bronson Exercises 7.2 Exercise 4 (Electrical Eng.)
-// Date: 10/12/2022
+// Date: 10/11/2022
+// Note: John Thompson and I worked on this problem together
 
 #include <iostream>
 #include <cmath>
