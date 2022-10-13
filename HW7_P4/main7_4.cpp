@@ -20,4 +20,15 @@ int daycount(int days = 0) {
   int count;
   cout << "Enter " << n << " variables: ";
   cin >> count; // day numbers mixed
+
+  // start from zero
+  for (int i = 1; i < n; i++) {
+    int a;
+    cin >> a;
+    if (a < count) {
+      days = i;
+      count = a;
+    }
+  }
+return days;
 }
