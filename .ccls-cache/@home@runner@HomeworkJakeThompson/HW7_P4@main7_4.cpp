@@ -16,4 +16,8 @@ int daycount(int days = 0) {
   int n; // test cases
   cout << "Enter test cases: ";
   cin >> n; 
+
+  int count;
+  cout << "Enter " << n << " variables: ";
+  cin >> count; // day numbers mixed
 }
