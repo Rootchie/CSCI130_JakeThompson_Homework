@@ -4,8 +4,8 @@
 // Date: 10/11/2022
 // collab with John Thompson
 
-#include <iostream>
 #include <cmath>
+#include <iostream>
 using namespace std;
 
 int daycount(int days);
@@ -17,7 +17,7 @@ int main() {
 int daycount(int days = 0) {
   int n; // test cases
   cout << "Enter test cases: ";
-  cin >> n; 
+  cin >> n;
 
   int count;
   cout << "Enter " << n << " variables: ";
@@ -32,5 +32,5 @@ int daycount(int days = 0) {
       count = a;
     }
   }
-return days;
+  return days;
 }
