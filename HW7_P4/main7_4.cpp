@@ -4,27 +4,27 @@
 // Date: 10/11/2022
 // collab with John Thompson
 
-#include <cmath>
 #include <iostream>
+#include <cmath>
 using namespace std;
-
+int daycount();
 int daycount(int days);
 int main() {
   int days;
-  days = daycount(days);
-  cout << "The number of days to wait is: " << days << endl;
+  days = daycount();
+  cout << days;
+  return 0;
 }
-int daycount(int days = 0) {
-  int n; // test cases
-  cout << "Enter test cases: ";
+int daycount() {
+  int n;
   cin >> n;
 
   int count;
-  cout << "Enter " << n << " variables: ";
-  cin >> count; // day numbers mixed
+  cin >> count;
 
-  // start from zero
-  for (int i = 1; i < n; i++) {
+  int days = 0;
+
+  for (int i = 1; i < n; i ++) {
     int a;
     cin >> a;
     if (a < count) {
