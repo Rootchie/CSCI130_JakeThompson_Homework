@@ -10,7 +10,9 @@ using namespace std;
 
 int daycount(int days);
 int main() {
-  
+  int days;
+  days = daycount(days);
+  cout << "The number of days to wait is: " << days << endl;
 }
 int daycount(int days = 0) {
   int n; // test cases
