@@ -17,5 +17,7 @@ int main() {
   for (int i = 0; i < 5; i++) {
     power[i] = resistance[i] *  pow(current[i], 2);
   }
+  cout << setprecision(2);
+  
   
 }
