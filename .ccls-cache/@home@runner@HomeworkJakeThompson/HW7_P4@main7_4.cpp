@@ -4,11 +4,11 @@
 // Date: 10/11/2022
 // collab with John Thompson
 
-#include <iostream>
 #include <cmath>
+#include <iostream>
 using namespace std;
+
 int daycount();
-int daycount(int days);
 int main() {
   int days;
   days = daycount();
@@ -24,7 +24,7 @@ int daycount() {
 
   int days = 0;
 
-  for (int i = 1; i < n; i ++) {
+  for (int i = 1; i < n; i++) {
     int a;
     cin >> a;
     if (a < count) {

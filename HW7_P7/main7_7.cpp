@@ -45,7 +45,7 @@ int main() {
   cout << setw(14) << totalc;
   double totalp;
   totalp = Totalp(power, ARRAY_SIZE);
-  cout << setw(14) << totalp;
+  cout << setw(14) << totalp << endl;
 }
 
 int Totalr(double resistance[], int listSize) {

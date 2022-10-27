@@ -1,5 +1,5 @@
 // Programmer: Jake Thompson
-// Description: Bronson Exercises 6.3 Exercise (Practice)
+// Description: Bronson Exercises 6.3 Exercise 5 (Practice)
 // Date: 10/11/2022
 
 #include <iostream>
