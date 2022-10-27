@@ -43,6 +43,16 @@ void printMatrix(int matrix[][5], int N_ROWS, int N_COLUMNS) {
 void printFinalGradCalc(int matrix[][5], int N_ROWS, int N_COLUMNS) {
   int row, col;
   for (row = 0; row < N_ROWS; row++) {
-    for (col = 0; col < N_COLUMNS; col++)
-  }
+    for (col = 0; col < N_COLUMNS; col++){}
+    int lowest = matrix[row][1];
+    if (matrix[row][2] < lowest) {
+      lowest = matrix[row][2];
+    }
+    else if (matrix[row][3] < lowest) {
+      lowest = matrix[row][3];
+    }
+    else 
+      lowest = matrix[row][4];
+    }
+  
 }
