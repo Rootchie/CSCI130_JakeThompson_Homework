@@ -18,7 +18,7 @@ int main() {
                                    {5, 94, 84, 74, 64}};
 
   printMatrix(grade, N_ROWS, N_COLUMNS);
-  printFinalGradCalc(grade, N_ROWS, N_COLUMNS);
+  
   return 0;
 }
 
@@ -43,10 +43,8 @@ void printMatrix(int matrix[][5], int N_ROWS, int N_COLUMNS) {
 }
 
 void printFinalGradCalc(int matrix[][5], int N_ROWS, int N_COLUMNS) {
-  int row, col;
-  for (row = 0; row < N_ROWS; row++) {
+    int row, col;
     int lowest = matrix[row][1];
-    for (col = 0; col < N_COLUMNS; col++)
     if (matrix[row][2] < lowest) {
     lowest = matrix[row][2];
     }
