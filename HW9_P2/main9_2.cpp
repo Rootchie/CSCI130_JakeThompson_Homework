@@ -53,6 +53,11 @@ void printFinalGradCalc(int matrix[][5], int N_ROWS, int N_COLUMNS) {
     }
     else 
       lowest = matrix[row][4];
-    }
-  int avg3
+  
+    int avg3 = (matrix[row][1]
+             + matrix[row][2]
+             + matrix[row][3]
+             + matrix[row][4]
+             - lowest) / 3;
+  }
 }
