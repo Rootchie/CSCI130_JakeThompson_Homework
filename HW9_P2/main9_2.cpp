@@ -5,7 +5,6 @@
 #include <iomanip>
 using namespace std;
 
-void printMatrix(int matrix[][5], int N_ROWS, int N_COLUMNS);
 void printFinalGradCalc(int matrix[][5], int N_ROWS, int N_COLUMNS);
 
 int main() {
@@ -21,8 +20,6 @@ int main() {
   printFinalGradCalc(grade, N_ROWS, N_COLUMNS);
   return 0;
 }
-
-
 void printFinalGradCalc(int matrix[][5], int N_ROWS, int N_COLUMNS) {
     int row, col;
   for (row = 0; row < N_ROWS; row++) {
