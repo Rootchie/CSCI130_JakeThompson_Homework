@@ -16,7 +16,7 @@ int main() {
                                    {4, 64, 74, 84, 94},
                                    {5, 94, 84, 74, 64}};
 
-  
+  cout << "\nStu no. Gr.1  Gr.2  Gr.3  Gr.4  Avg.1 Avg.2  Final Gr." << endl;
   printFinalGradCalc(grade, N_ROWS, N_COLUMNS);
   return 0;
 }
