@@ -17,8 +17,8 @@ int main() {
                                    {4, 64, 74, 84, 94},
                                    {5, 94, 84, 74, 64}};
 
-  printMatrix(grade, N_ROWS, N_COLUMNS);
   
+  printFinalGradCalc(grade, N_ROWS, N_COLUMNS);
   return 0;
 }
 
@@ -31,19 +31,33 @@ void printMatrix(int matrix[][5], int N_ROWS, int N_COLUMNS) {
               + matrix[row][2]
               + matrix[row][3]
               + matrix[row][4]) / 4;
-  cout << setw(6) << avg1 << " ";
+  cout << setw(6) << avg1;
 
   double avg2 = matrix[row][1] * 0.2
               + matrix[row][2] * 0.3
               + matrix[row][3] * 0.3
               + matrix[row][4] * 0.2;
-  cout << setw(6) << avg2 << " ";
+  cout << setw(6) << avg2;
   cout << endl;
   }
 }
 
 void printFinalGradCalc(int matrix[][5], int N_ROWS, int N_COLUMNS) {
     int row, col;
+  for (row = 0; row < N_ROWS; row++) {
+    for (col = 0; col < N_COLUMNS; col++) 
+      cout << setw(6) << matrix[row][col];
+  double avg1 = (matrix[row][1]
+              + matrix[row][2]
+              + matrix[row][3]
+              + matrix[row][4]) / 4;
+  cout << setw(6) << avg1;
+
+  double avg2 = matrix[row][1] * 0.2
+              + matrix[row][2] * 0.3
+              + matrix[row][3] * 0.3
+              + matrix[row][4] * 0.2;
+  cout << setw(6) << avg2;
     int lowest = matrix[row][1];
     if (matrix[row][2] < lowest) {
     lowest = matrix[row][2];
@@ -51,9 +65,9 @@ void printFinalGradCalc(int matrix[][5], int N_ROWS, int N_COLUMNS) {
     else if (matrix[row][3] < lowest) {
       lowest = matrix[row][3];
     }
-    else 
+    else {
       lowest = matrix[row][4];
-  
+    }
     int avg3 = (matrix[row][1]
              + matrix[row][2]
              + matrix[row][3]
