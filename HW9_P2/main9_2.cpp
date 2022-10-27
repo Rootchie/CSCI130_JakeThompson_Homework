@@ -6,6 +6,7 @@
 using namespace std;
 
 void printMatrix(int matrix[][5], int N_ROWS, int N_COLUMNS);
+void printFinalGradCalc(int matrix[][5], int N_ROWS, int N_COLUMNS);
 
 int main() {
   const int N_ROWS = 5;
@@ -17,6 +18,7 @@ int main() {
                                    {5, 94, 84, 74, 64}};
 
   printMatrix(grade, N_ROWS, N_COLUMNS);
+  printFinalGradCalc(grade, N_ROWS, N_COLUMNS);
   return 0;
 }
 
