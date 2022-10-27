@@ -17,6 +17,7 @@ int main() {
                                    {5, 94, 84, 74, 64}};
 
   printMatrix(grade, N_ROWS, N_COLUMNS);
+  
 }
 
 void printMatrix(int matrix[][5], int N_ROWS, int N_COLUMNS) {
@@ -26,4 +27,12 @@ void printMatrix(int matrix[][5], int N_ROWS, int N_COLUMNS) {
       cout << setw(6) << matrix[row][col] << " ";
       cout << endl;
   }
+}
+
+void printFinalGradeCalc(int matrix [][5], int N_ROWS, int N_COLUMNS) {
+  int row, col;
+  for (row = 0; row < N_ROWS; row++) {
+    for (col = 0; col < N_COLUMNS; col++)
+    
+    
 }
