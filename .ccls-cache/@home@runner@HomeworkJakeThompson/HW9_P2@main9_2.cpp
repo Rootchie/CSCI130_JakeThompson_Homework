@@ -39,3 +39,10 @@ void printMatrix(int matrix[][5], int N_ROWS, int N_COLUMNS) {
   cout << endl;
   }
 }
+
+void printFinalGradCalc(int matrix[][5], int N_ROWS, int N_COLUMNS) {
+  int row, col;
+  for (row = 0; row < N_ROWS; row++) {
+    for (col = 0; col < N_COLUMNS; col++)
+  }
+}
