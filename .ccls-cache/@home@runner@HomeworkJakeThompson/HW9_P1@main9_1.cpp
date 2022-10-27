@@ -30,7 +30,8 @@ void printMatrix(int matrix[][5], int N_ROWS, int N_COLUMNS) {
               + matrix[row][2]
               + matrix[row][3]
               + matrix[row][4]) / 4;
-  cout << setw(5) << avg1;
+  cout << setw(6) << avg1 << " ";
+    
     
   }
 }
