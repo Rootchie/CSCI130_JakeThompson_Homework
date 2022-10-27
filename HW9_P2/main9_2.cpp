@@ -59,7 +59,7 @@ void printFinalGradCalc(int matrix[][5], int N_ROWS, int N_COLUMNS) {
              + matrix[row][3]
              + matrix[row][4]
              - lowest) / 3;
-    cout << setw(6) << avg3 << " ";
+    cout << setw(6) << avg3;
     cout << endl;
   }
 }
