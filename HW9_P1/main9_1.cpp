@@ -39,4 +39,3 @@ void printMatrix(int matrix[][5], int N_ROWS, int N_COLUMNS) {
   cout << endl;
   }
 }
-
