@@ -1,12 +1,11 @@
 // Programmer: Jake Thompson
 // Description: Bronson Exercises Project 9 
-// Date: 10/11/2022
+// Date: 10/26/2022
 #include <iostream>
 #include <iomanip>
 using namespace std;
 
 void printMatrix(int matrix[][5], int N_ROWS, int N_COLUMNS);
-void printFinalGradeCalc(int matrix [][5], int N_ROWS, int N_COLUMNS);
 
 int main() {
   const int N_ROWS = 5;
@@ -17,9 +16,9 @@ int main() {
                                    {4, 64, 74, 84, 94},
                                    {5, 94, 84, 74, 64}};
 
-  printMatrix(grade, N_ROWS, N_COLUMNS);
-  printFinalGradeCalc(grade, N_ROWS, N_COLUMNS);
   
+  printMatrix(grade, N_ROWS, N_COLUMNS);
+  return 0;
 }
 
 void printMatrix(int matrix[][5], int N_ROWS, int N_COLUMNS) {
@@ -27,7 +26,12 @@ void printMatrix(int matrix[][5], int N_ROWS, int N_COLUMNS) {
   for (row = 0; row < N_ROWS; row++) {
     for (col = 0; col < N_COLUMNS; col++) 
       cout << setw(6) << matrix[row][col] << " ";
-    cout << endl;
+  double avg1 = (matrix[row][1]
+              + matrix[row][2]
+              + matrix[row][3]
+              + matrix[row][4]) / 4;
+  cout << setw(5) << avg1;
+    
   }
 }
 
