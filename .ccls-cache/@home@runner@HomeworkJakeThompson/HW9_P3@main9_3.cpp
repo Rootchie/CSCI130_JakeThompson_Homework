@@ -13,20 +13,8 @@ char answers[numQuestions] = {'T','T','F','F','T'};
 void calcGrades(char tests[][numQuestions], int grade[]);
 
 int main() {
-  const int numTests = 6;
-  char tests[numTests][numQuestions];
-  for (int i = 0; i < numTests; i++) {
-    for (int k = 0; k < numQuestions; k++) {
-      cin >> tests[i][k];
-    }
-  }
-  vector<int> grades = calcGrades(tests, numTests);
-  cout << "Grades: ";
-  for (int i = 0; i < numTests; i++){
-    cout << grades[i] << " ";
-  }
-  cout << endl;
-  return 0;
+  cout << "How many test cases: " << endl;
+  cin >> testNum;
 }
 
 void calcGrades(char tests[][numQuestions], int grade[]) {
