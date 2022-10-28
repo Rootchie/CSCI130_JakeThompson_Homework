@@ -14,15 +14,15 @@ vector<int> calcGrades(char tests[][numQuestions], int numTests);
 int main() {
   const int numTests = 6;
   char tests[numTests][numQuestions];
-  for (int test = 0; test < numTests; test++) {
-    for (int question = 0; question < numQuestions; question++) {
-      cin >> tests[test][question];
+  for (int i = 0; i < numTests; i++) {
+    for (int k = 0; k < numQuestions; k++) {
+      cin >> tests[i][k];
     }
   }
   vector<int> grades = calcGrades(tests, numTests);
   cout << "Grades: ";
-  for (int test = 0; test < numTests; test++){
-    cout << grades[test] << " ";
+  for (int i = 0; i < numTests; i++){
+    cout << grades[i] << " ";
   }
   cout << endl;
   return 0;
@@ -30,15 +30,15 @@ int main() {
 
 vector<int> calcGrades(char tests[][numQuestions], int numTests) {
   vector<int> grades(numTests);
-  for (int test = 0; test < numTests; test++) {
+  for (int i = 0; i < numTests; i++) {
     int grade = 0;
-    for (int question = 0; question < numQuestions; question++) {
+    for (int k = 0; k < numQuestions; k++) {
       // if test answer matches correct answer
-      if(tests[test][question] == answers[question]) {
+      if(tests[i][k] == answers[k]) {
         grade += 5;
       }
     }
-    grades[test] = grade;
+    grades[i] = grade;
   }
   return grades;
 }
