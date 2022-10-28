@@ -8,6 +8,7 @@ using namespace std;
 
 const int numQuestions = 5;
 char answers[numQuestions] = {'T','T','F','F','T'};
+int calcGrades(char test[][numQuestions], int numTests);
 
 int main() {
   
