@@ -14,7 +14,17 @@ int main() {
   
 }
 
-int calcGrades(char test[][numQuestions], int numTests) {
+int calcGrades(char tests[][numQuestions], int numTests) {
   int grades(numTests);
-  
+  for (int test = 0; test < numTests; test++) {
+    int grade = 0;
+    for (int question = 0; question < numQuestions; question++) {
+      // if test answer matches correct answer
+      if(tests[test][question] == answers[question]) {
+        grade += 5;
+      }
+    }
+    grades(test) = grade;
+  }
+  return grade;
 }
