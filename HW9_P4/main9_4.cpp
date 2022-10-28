@@ -66,7 +66,7 @@ int main()
                << meanAirQualityIndex(AirQuality_Index, N_ROWS, city_col)
                << "." << endl;
   }
-  return 0;
+return 0;
 }
 
 
