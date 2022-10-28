@@ -51,3 +51,16 @@ void printMatrix_3col(int matrix[][3], int N_ROWS, int N_COLUMNS) {
     }
 }
 
+int CountUnhealthySensitive(int matrix[][3], int N_ROWS, int city_col) {
+  int count = 0;
+  int unhealthy_level = 101;
+  int row;
+
+  for (row = 0; row < N_ROWS; row++) {
+    if (matrix[row][city_col] >= unhealthy_level) {
+    count++; 
+    }
+  }
+  return count;
+}
+
