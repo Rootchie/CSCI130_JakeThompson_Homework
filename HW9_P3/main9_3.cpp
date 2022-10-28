@@ -13,3 +13,8 @@ int calcGrades(char test[][numQuestions], int numTests);
 int main() {
   
 }
+
+int calcGrades(char test[][numQuestions], int numTests) {
+  int grades(numTests);
+  
+}
