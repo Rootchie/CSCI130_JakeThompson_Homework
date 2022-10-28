@@ -31,41 +31,7 @@ int main()
     cout << "MyMatrix contains: " << endl;
     printMatrix_3col(AirQuality_Index, N_ROWS, N_COLUMNS);
 
-  cout << "From 10/4/2020 to 10/13/2020 the air quality was unhealthy"                      " for sensitive groups in: " << endl;
-  for (city_col = 0; city_col < N_COLUMNS; city_col++) {
-    if (city_col == 0)
-          cout << "Grand Junction: " 
-               << CountUnhealthySensitive(AirQuality_Index, N_ROWS, city_col) 
-               << " times." << endl;
   
-    if (city_col == 1)
-          cout << "Fort Collins: " 
-               << CountUnhealthySensitive(AirQuality_Index, N_ROWS, city_col) 
-               << " times." << endl;
-  
-    if (city_col == 2)
-          cout << "Denver/Boulder: " 
-               << CountUnhealthySensitive(AirQuality_Index, N_ROWS, city_col) 
-               << " times." << endl << endl;
-    } 
-
-  cout << "From 10/4/2020 to 10/13/2020 the average air quality in: "                   << endl;
-  for (city_col = 0; city_col < N_COLUMNS; city_col++) {
-    if (city_col == 0)
-          cout << "Grand Junction was " 
-               << meanAirQualityIndex(AirQuality_Index, N_ROWS, city_col)
-               << "." << endl;
-  
-    if (city_col == 1)
-          cout << "Fort Collins was " 
-               << meanAirQualityIndex(AirQuality_Index, N_ROWS, city_col)
-               << "." << endl;
-  
-    if (city_col == 2)
-          cout << "Denver/Boulder was " 
-               << meanAirQualityIndex(AirQuality_Index, N_ROWS, city_col)
-               << "." << endl;
-  }
   return 0;
 }
 
@@ -83,29 +49,4 @@ void printMatrix_3col(int matrix[][3], int N_ROWS, int N_COLUMNS) {
         
         cout << endl;    
     }
-}
-
-int CountUnhealthySensitive(int matrix[][3], int N_ROWS, int city_col) {
-  int count = 0;
-  int unhealthy_level = 101;
-  int row;
-
-  for (row = 0; row < N_ROWS; row++) {
-    if (matrix[row][city_col] >= unhealthy_level) {
-    count++; 
-    }
-  }
-  return count;
-}
-
-int meanAirQualityIndex(int matrix[][3], int N_ROWS, int city_col) {
-  int sum = 0;
-  int row, avg;
-
-  for (row = 0; row < N_ROWS; row++)
-    sum = sum + matrix[row][city_col];
-
-  avg = sum / N_ROWS;
-
-  return avg;
 }
