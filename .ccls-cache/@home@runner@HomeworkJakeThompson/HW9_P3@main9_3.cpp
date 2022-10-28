@@ -3,7 +3,6 @@
 // Date: 10/27/2022
 #include <iostream>
 #include <iomanip>
-#include <vector>
 
 using namespace std;
 
