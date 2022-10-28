@@ -26,6 +26,13 @@ int main() {
       cin >> test_case[i][k];
     }
   }
+  calcGrades(test_case, grade);
+  cout << "The grades are: " << endl;
+  for (int i = 0; i < testNum; i++) {
+    cout << grade[i] << endl;
+  }
+  cout << endl;
+  return 0;
 }
 
 void calcGrades(char tests[][numQuestions], int grade[]) {
