@@ -17,6 +17,7 @@ int main() {
   cin >> testNum;
 
   int grade[testNum];
+  char test_case[testNum][numQuestions];
 }
 
 void calcGrades(char tests[][numQuestions], int grade[]) {
