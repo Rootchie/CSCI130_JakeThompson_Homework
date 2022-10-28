@@ -20,7 +20,11 @@ int main() {
   }
   int grades = calcGrades(tests, numTests);
   cout << "Grades: ";
-  
+  for (int test = 0; test < numTests; test++){
+    cout << grades[test] << " ";
+  }
+  cout << endl;
+  return 0;
 }
 
 int calcGrades(char tests[][numQuestions], int numTests) {
