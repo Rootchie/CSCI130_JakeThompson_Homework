@@ -17,5 +17,13 @@ int main()
             //Reading Matrix A
             cin >> A[i][j];
         }
-    
+    }
+    /* Calculate determinant of matrix A */
+    d = (A[0][0]*A[1][1])-(A[0][1]*A[1][0]);
+    if (d == 0)
+    {
+        cout << "Determinant cannot be ZERO" << endl;
+        return 0;
+    }
+    return 0;
 }
