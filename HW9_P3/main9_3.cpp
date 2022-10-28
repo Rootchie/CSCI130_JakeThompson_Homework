@@ -8,14 +8,14 @@ using namespace std;
 
 const int numQuestions = 5;
 char answers[numQuestions] = {'T','T','F','F','T'};
-int calcGrades(char test[][numQuestions], int numTests);
+int calcGrades(char tests[][numQuestions], int numTests);
 
 int main() {
   const int numTests = 6;
   char tests[numTests][numQuestions];
   for (int test = 0; test < numTests; test++) {
     for (int question = 0; question < numQuestions; question++) {
-      
+      cin >> tests[test][question];
     }
   }
 }
