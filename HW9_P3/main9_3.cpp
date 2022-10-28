@@ -22,6 +22,9 @@ int main() {
   for (int i = 0; i < testNum; i++) {
     grade[i] = 0;
     cout << "Input all test question responses for test " << i + 1 << endl;
+    for (int k = 0; k < numQuestions; k++) {
+      cin >> test_case[i][k];
+    }
   }
 }
 
