@@ -39,5 +39,17 @@ int main()
         }
         cout << endl;
     }
+    /* Find Inverse of A */
+    cout << "Inverse of Matrix A is: " << endl;
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 2; j++)
+        {
+            invA[i][j]=(adjA[i][j])/(float)d;
+            cout << fixed << showpoint << setprecision(1) 
+                 << setw(2) << invA[i][j];
+        }
+        cout << endl;
+    }
     return 0;
 }
