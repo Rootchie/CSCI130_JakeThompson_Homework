@@ -49,7 +49,23 @@ int main()
                << " times." << endl << endl;
     } 
 
+  cout << "From 10/4/2020 to 10/13/2020 the average air quality in: "                   << endl;
+  for (city_col = 0; city_col < N_COLUMNS; city_col++) {
+    if (city_col == 0)
+          cout << "Grand Junction was " 
+               << meanAirQualityIndex(AirQuality_Index, N_ROWS, city_col)
+               << "." << endl;
   
+    if (city_col == 1)
+          cout << "Fort Collins was " 
+               << meanAirQualityIndex(AirQuality_Index, N_ROWS, city_col)
+               << "." << endl;
+  
+    if (city_col == 2)
+          cout << "Denver/Boulder was " 
+               << meanAirQualityIndex(AirQuality_Index, N_ROWS, city_col)
+               << "." << endl;
+  }
   return 0;
 }
 
