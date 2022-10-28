@@ -15,6 +15,8 @@ void calcGrades(char tests[][numQuestions], int grade[]);
 int main() {
   cout << "How many test cases: " << endl;
   cin >> testNum;
+
+  int grade[testNum];
 }
 
 void calcGrades(char tests[][numQuestions], int grade[]) {
