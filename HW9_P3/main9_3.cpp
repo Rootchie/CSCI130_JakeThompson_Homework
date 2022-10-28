@@ -18,7 +18,9 @@ int main() {
       cin >> tests[test][question];
     }
   }
-  int grades = calcGrades(tests, numTests)
+  int grades = calcGrades(tests, numTests);
+  cout << "Grades: ";
+  
 }
 
 int calcGrades(char tests[][numQuestions], int numTests) {
