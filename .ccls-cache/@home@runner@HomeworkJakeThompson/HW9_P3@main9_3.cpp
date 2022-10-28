@@ -1,6 +1,7 @@
 // Programmer: Jake Thompson
 // Description: Bronson Exercises Project 12
 // Date: 10/27/2022
+// With John Thompson
 #include <iostream>
 #include <iomanip>
 
