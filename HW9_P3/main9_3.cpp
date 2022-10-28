@@ -18,6 +18,7 @@ int main() {
       cin >> tests[test][question];
     }
   }
+  int grades = calcGrades(tests, numTests)
 }
 
 int calcGrades(char tests[][numQuestions], int numTests) {
