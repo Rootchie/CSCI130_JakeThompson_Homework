@@ -18,6 +18,11 @@ int main() {
 
   int grade[testNum];
   char test_case[testNum][numQuestions];
+
+  for (int i = 0; i < testNum; i++) {
+    grade[i] = 0;
+    cout << "Input all test question responses for test " << i + 1 << endl;
+  }
 }
 
 void calcGrades(char tests[][numQuestions], int grade[]) {
