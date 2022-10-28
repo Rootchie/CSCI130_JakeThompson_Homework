@@ -47,7 +47,7 @@ int main()
         {
             invA[i][j]=(adjA[i][j])/(float)d;
             cout << fixed << showpoint << setprecision(1) 
-                 << setw(2) << invA[i][j];
+                 << setw(5) << invA[i][j];
         }
         cout << endl;
     }
