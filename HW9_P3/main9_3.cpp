@@ -11,6 +11,8 @@ char answers[numQuestions] = {'T','T','F','F','T'};
 int calcGrades(char test[][numQuestions], int numTests);
 
 int main() {
+  const int numTests = 6;
+  char tests[numTests][numQuestions];
   
 }
 
