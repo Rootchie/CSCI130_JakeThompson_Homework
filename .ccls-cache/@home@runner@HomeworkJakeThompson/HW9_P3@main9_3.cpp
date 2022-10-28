@@ -1,21 +1,35 @@
 // Programmer: Jake Thompson
-// Description:  Bronson Exercises Project 12
-// Date: 10/27/2022\
+// Description: Bronson Exercises Project 12
+// Date: 10/27/2022
 #include <iostream>
 #include <iomanip>
+#include <vector>
 
 using namespace std;
 
 const int numQuestions = 5;
 char answers[numQuestions] = {'T','T','F','F','T'};
-int calcGrades(char test[][numQuestions], int numTests);
+vector<int> calcGrades(char tests[][numQuestions], int numTests);
 
 int main() {
-  
+  const int numTests = 6;
+  char tests[numTests][numQuestions];
+  for (int test = 0; test < numTests; test++) {
+    for (int question = 0; question < numQuestions; question++) {
+      cin >> tests[test][question];
+    }
+  }
+  vector<int> grades = calcGrades(tests, numTests);
+  cout << "Grades: ";
+  for (int test = 0; test < numTests; test++){
+    cout << grades[test] << " ";
+  }
+  cout << endl;
+  return 0;
 }
 
-int calcGrades(char tests[][numQuestions], int numTests) {
-  int grades(numTests);
+vector<int> calcGrades(char tests[][numQuestions], int numTests) {
+  vector<int> grades(numTests);
   for (int test = 0; test < numTests; test++) {
     int grade = 0;
     for (int question = 0; question < numQuestions; question++) {
@@ -24,7 +38,7 @@ int calcGrades(char tests[][numQuestions], int numTests) {
         grade += 5;
       }
     }
-    grades(test) = grade;
+    grades[test] = grade;
   }
-  return grade;
+  return grades;
 }
