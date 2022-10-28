@@ -31,6 +31,24 @@ int main()
     cout << "MyMatrix contains: " << endl;
     printMatrix_3col(AirQuality_Index, N_ROWS, N_COLUMNS);
 
+  cout << "From 10/4/2020 to 10/13/2020 the air quality was unhealthy"                      " for sensitive groups in: " << endl;
+  for (city_col = 0; city_col < N_COLUMNS; city_col++) {
+    if (city_col == 0)
+          cout << "Grand Junction: " 
+               << CountUnhealthySensitive(AirQuality_Index, N_ROWS, city_col) 
+               << " times." << endl;
+  
+    if (city_col == 1)
+          cout << "Fort Collins: " 
+               << CountUnhealthySensitive(AirQuality_Index, N_ROWS, city_col) 
+               << " times." << endl;
+  
+    if (city_col == 2)
+          cout << "Denver/Boulder: " 
+               << CountUnhealthySensitive(AirQuality_Index, N_ROWS, city_col) 
+               << " times." << endl << endl;
+    } 
+
   
   return 0;
 }
