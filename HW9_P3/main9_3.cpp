@@ -24,7 +24,7 @@ int calcGrades(char tests[][numQuestions], int numTests) {
         grade += 5;
       }
     }
-    grades[] = grade;
+    grades[test] = grade;
   }
   return grades;
 }
