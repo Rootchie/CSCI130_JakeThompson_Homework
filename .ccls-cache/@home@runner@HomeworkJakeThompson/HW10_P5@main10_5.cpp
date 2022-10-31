@@ -14,6 +14,7 @@ int main() {
   cout << endl << "Output: ";
   arr(nums);
   cout << endl;
+  // Output will be (33, 16, 99, 34)
   return 0;
 }
 
