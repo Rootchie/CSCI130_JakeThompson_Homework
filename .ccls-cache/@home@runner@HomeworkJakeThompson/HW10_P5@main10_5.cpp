@@ -11,7 +11,9 @@ void arr(int[][COLS]);
 int main() {
   int nums[ROWS][COLS] = {{33, 16, 29},
                           {54, 67, 99}};
+  cout << endl << "Output: ";
   arr(nums);
+  cout << endl;
   return 0;
 }
 
