@@ -24,5 +24,8 @@ void arr(int (*val)[3]) {
   cout << endl << *(*(val + 1) + 2);
   cout << endl << *(*val) + 1;
 
+  cout << endl << endl 
+       << "The notion val[1][2] IS valid in the function, and is equal to: " 
+       << endl << val[1][2];
   return;
 }
