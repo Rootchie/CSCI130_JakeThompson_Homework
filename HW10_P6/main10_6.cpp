@@ -17,5 +17,9 @@ int main() {
     cin >> cars[i].miles;
     cin >> cars[i].gallons;
   }
-  
+  double totalMPG = 0;
+  for (int i = 0; i < numCars; i++) {
+    mpg = cars[i].miles / cars[i].gallons;
+    totalMPG += mpg;
+  }
 }
