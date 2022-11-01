@@ -12,4 +12,10 @@ int gallons;};
 int main() {
   const int NumCars = 5;
   car cars[NumCars];
+  for (int i = 0; i < NumCars; i++) {
+    cin >> cars[i].num;
+    cin >> cars[i].miles;
+    cin >> cars[i].gallons;
+  }
+  
 }
