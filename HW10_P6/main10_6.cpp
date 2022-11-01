@@ -18,11 +18,14 @@ int main() {
     cin >> cars[i].gallons;
   }
   double totalMPG = 0;
-  for (int i = 0; i < numCars; i++) {
-    mpg = cars[i].miles / cars[i].gallons;
+  for (int i = 0; i < NumCars; i++) {
+    double mpg = cars[i].miles / cars[i].gallons;
     totalMPG += mpg;
-    cout << "Car number " << cars[i].num << " used"
+    cout << "Car number " << cars[i].num << " used "
          << mpg << " miles per gallon." << endl;
-    
   }
+  cout << "Average miles per gallon = " 
+       << totalMPG / NumCars << endl;
+  
+  return 0;
 }
