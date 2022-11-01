@@ -21,5 +21,8 @@ int main() {
   for (int i = 0; i < numCars; i++) {
     mpg = cars[i].miles / cars[i].gallons;
     totalMPG += mpg;
+    cout << "Car number " << cars[i].num << " used"
+         << mpg << " miles per gallon." << endl;
+    
   }
 }
