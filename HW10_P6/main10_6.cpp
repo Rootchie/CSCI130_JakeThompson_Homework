@@ -10,5 +10,6 @@ int miles;
 int gallons;};
 
 int main() {
-  
+  const int NumCars = 5;
+  car cars[NumCars];
 }
