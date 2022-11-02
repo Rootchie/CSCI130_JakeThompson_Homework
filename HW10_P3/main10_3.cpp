@@ -24,6 +24,18 @@ int main() {
   for (int index = 0; index < ARRAY_SIZE; index++) {
     cin >> myArray[index];
   }
-  
-}
 
+  for (int index = 0; index < ARRAY_SIZE; index++) {
+    if (index == 0) {
+      newMax = myArray[index];
+      cout << newMax << " ";
+      count++;
+    }
+    else if(newMax < myArray[index] && index > 0) {
+      newMax = myArray[index];
+      cout << newMax << " ";
+      count++;
+    }
+  }
+  cout << "\nThe new array size is: " << count + 1 << endl;
+}
