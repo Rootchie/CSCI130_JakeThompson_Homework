@@ -37,5 +37,5 @@ int main() {
       count++;
     }
   }
-  cout << "\nThe new array size is: " << count + 1 << endl;
+  cout << "\nThe new array size is: " << count << endl;
 }
