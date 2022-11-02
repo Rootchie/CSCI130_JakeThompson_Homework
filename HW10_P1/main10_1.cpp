@@ -11,6 +11,7 @@ int findNumOfUniqueCharInStr(string myString);
 int main() {
   string word;
   string guess;
+  string npos;
   cin >> word;
   cin >> guess;
 
@@ -18,7 +19,9 @@ int main() {
   int bodyParts = 0;
 
   for (int i = 0; i < 26; i++) {
-    
+    if (word.find(guess[i]) != string::npos) {
+      l--;
+    }
   }
 }
 
