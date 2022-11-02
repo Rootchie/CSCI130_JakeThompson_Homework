@@ -19,9 +19,10 @@ int main() {
   int bodyParts = 0;
 
   for (int i = 0; i < 26; i++) {
-    if (word.find(guess[i]) != string::npos) {
+    if (word.find(guess[i]) != string::npos) 
       l--;
-    }
+    else 
+      bodyParts++;
   }
 }
 
