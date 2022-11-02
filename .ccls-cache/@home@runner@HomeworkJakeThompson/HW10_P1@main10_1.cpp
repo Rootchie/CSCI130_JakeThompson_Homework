@@ -23,7 +23,11 @@ int main() {
       l--;
     else 
       bodyParts++;
-  }
+    if (bodyParts == 10) 
+      cout << "LOSE";
+    if (l == 0)
+      cout << "WIN";
+    }
 }
 
 // find the unique values in a string
