@@ -3,7 +3,10 @@
 // https://open.kattis.com/problems/hangman
 // Date: 10/31/2022
 #include <iostream>
+#include <iomanip>
 using namespace std;
+
+int findNumOfUniqueCharInStr(string myString);
 
 int main() {
   
