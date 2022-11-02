@@ -19,15 +19,21 @@ int main() {
   int bodyParts = 0;
 
   for (int i = 0; i < 26; i++) {
-    if (word.find(guess[i]) != string::npos) 
+    if (word.find(guess[i]) != string::npos) {
       l--;
-    else 
-      bodyParts++;
-    if (bodyParts == 10) 
-      cout << "LOSE";
-    if (l == 0)
-      cout << "WIN";
     }
+    else {
+      bodyParts++;
+    }
+    if (bodyParts == 10) {
+      cout << "LOSE";
+      break;
+    }
+    if (l == 0) {
+      cout << "WIN";
+      break;
+    }
+  }
 }
 
 // find the unique values in a string
