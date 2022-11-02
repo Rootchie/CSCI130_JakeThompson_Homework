@@ -9,14 +9,17 @@ using namespace std;
 int findNumOfUniqueCharInStr(string myString);
 
 int main() {
-string word;
-string guess;
-cin >> word;
-cin >> guess;
+  string word;
+  string guess;
+  cin >> word;
+  cin >> guess;
 
-int l = findNumOfUniqueCharInStr(word);
-int bodyParts = 0;
+  int l = findNumOfUniqueCharInStr(word);
+  int bodyParts = 0;
 
+  for (int i = 0; i < 26; i++) {
+    
+  }
 }
 
 // find the unique values in a string
