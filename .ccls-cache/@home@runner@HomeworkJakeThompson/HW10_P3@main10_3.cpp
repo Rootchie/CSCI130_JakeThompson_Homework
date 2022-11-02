@@ -2,12 +2,13 @@
 // Description: Kattis Greedily Increasing Subsequence
 // https://open.kattis.com/problems/hangman
 // Date: 10/31/2022
-// With John Thompson
+// With John Thompson Eric and Edwin
 #include <iostream>
 #include <array>
 
 using namespace std;
 
+void sortArray(int myArray[], int ARRAY_SIZE, int newMax);
 int count = 0;
 
 int main() {
@@ -25,7 +26,11 @@ int main() {
     cin >> myArray[index];
   }
 
-  for (int index = 0; index < ARRAY_SIZE; index++) {
+  sortArray(myArray, ARRAY_SIZE, newMax);
+}
+
+void sortArray(int myArray[], int ARRAY_SIZE, int newMax) {
+    for (int index = 0; index < ARRAY_SIZE; index++) {
     if (index == 0) {
       newMax = myArray[index];
       cout << newMax << " ";
